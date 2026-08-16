@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natessy Group | Premier Rental &amp; Property Management</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;       /* Deep Navy */
+            --secondary: #3b82f6;     /* Bright Accent Blue */
+            --dark: #0f172a;          /* Charcoal text */
+            --light: #f8fafc;         /* Light background */
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--dark);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .btn-nav {
+            background-color: var(--primary);
+            color: var(--white) !important;
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+        }
+
+        .btn-nav:hover {
+            background-color: var(--secondary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(15, 23, 42, 0.9)), 
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80') center/cover;
+            color: var(--white);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.8rem 1.75rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+            padding: 0.8rem 1.75rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.25rem;
+            color: var(--primary);
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.35rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 3rem 2rem 1.5rem;
+            margin-top: 5rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #334155;
+            padding-top: 1.5rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#" class="logo">Natessy Group</a>
+            <ul class="nav-links">
+                <li><a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#about">About</a></li>
+                <li><a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#services">Services</a></li>
+                <li><a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#contact">Contact</a></li>
+                <li><a href="file:///Users/michaelobialor/Downloads/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#" class="btn-nav">Client Portal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Expert Rental &amp; Property Management Services</h1>
+            <p>Maximizing property value for owners while delivering exceptional living experiences for tenants.</p>
+            <div class="hero-buttons">
+                <a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#services" class="btn-primary">Our Services</a>
+                <a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="features" id="services">
+        <h2 class="section-title">What We Do</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Property Management</h3>
+                <p>Comprehensive day-to-day management including maintenance coordination, financial reporting, and tenant relations to maximize your return on investment.</p>
+            </div>
+            <div class="card">
+                <h3>Tenant Placement &amp; Screening</h3>
+                <p>Thorough background, credit, income, and rental history checks to ensure high-quality, reliable residents for your rental properties.</p>
+            </div>
+            <div class="card">
+                <h3>Lease &amp; Rent Administration</h3>
+                <p>Seamless online rent collections, lease enforcement, renewal management, and timely disbursement of owner payouts through secure portals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Natessy Group</h4>
+                <p style="color: #94a3b8;">Professional property management and rental services you can rely on.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#about">About Us</a></li>
+                    <li><a href="file:///Users/michaelobialor/Downloads/gemini-code-1786837957379.html#services">Services</a></li>
+                    <li><a href="file:///Users/michaelobialor/Downloads/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p style="color: #94a3b8;">Email: support@natessygroup.com</p>
+                <p style="color: #94a3b8;">Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Natessy Group Real Estate Rental and Property Management. All rights reserved.
+        </div>
+    </footer>
+
+
+</body></html>
